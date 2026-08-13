@@ -1,7 +1,10 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
+
+CORS(app)
 
 JSON_URL = "https://raw.githubusercontent.com/RaacodexDev/XPPLG1/main/pengumuman.json"
 
